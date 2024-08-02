@@ -45,4 +45,22 @@ def pali(s):
         if s[i]!=stack[i]:
             break
     return True
-print(pali('naman'))
+#print(pali('naman'))
+
+def three_digits(arr):
+    for i in arr:
+        if i<1000 and i>99:
+            print(f"{i} has Three digits")
+        
+def has_three_digits(num):
+    num = abs(num)  # Consider the absolute value to handle negative numbers
+    # Divide the number until it is less than 1000 and check the count of divisions
+    count = 0
+    while num >= 100:
+        num //= 10
+        count += 1
+    return count == 2  # Exactly three digits if two divisions are done
+array = [123,768,78,90]
+# Find numbers with exactly 3 digits
+three_digit_numbers = [num for num in array if has_three_digits(num)]
+print(three_digit_numbers)
