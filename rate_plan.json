@@ -1,0 +1,4 @@
+[
+    {"rate_plan_key":1,"rate_plan_description":"used for calls","rate_plan_type":"Cellular"},
+    {"rate_plan_key":2,"rate_plan_description":"used for internet","rate_plan_type":"Internet"}
+]
