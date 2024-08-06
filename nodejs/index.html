@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .balance {
+            margin: 20px 0;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Account Management</h1>
+        <div class="balance">
+            <p>Current Balance: <span id="balanceAmount">$2300</span></p>
+        </div>
+        <div>
+            <h2>Deposit</h2>
+            <input type="number" id="depositAmount" placeholder="Amount to Deposit">
+            <button onclick="deposit()">Deposit</button>
+        </div>
+        <div>
+            <h2>Withdraw</h2>
+            <input type="number" id="withdrawAmount" placeholder="Amount to Withdraw">
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <div id="message"></div>
+        <canvas id="balanceChart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Include external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
